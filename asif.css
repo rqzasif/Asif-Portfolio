@@ -1,0 +1,194 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Global Styles */
+body {
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: #ffea00;
+}
+
+/* Sections Styling */
+section {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Hero Section */
+#hero h2 {
+    font-size: 2rem;
+}
+
+.highlight {
+    color: #ffea00;
+}
+
+/* Social Links */
+.social-links {
+    margin-top: 15px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 10px;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    background: white;
+    color: #0072ff;
+}
+
+/* Profile Picture */
+.profile-pic {
+    width: 120px;
+    border-radius: 50%;
+    margin-top: 10px;
+    border: 3px solid #ffea00;
+}
+
+/* Skills Section */
+.skills-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    display: inline-block;
+    background: #ffea00;
+    color: #0072ff;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.skills-list li:hover {
+    background: white;
+    transform: scale(1.1);
+}
+
+/* Contact Section */
+.contact-container {
+    text-align: center;
+}
+
+h2 {
+    color: white;
+}
+
+.underline {
+    width: 60px;
+    height: 3px;
+    background: white;
+    margin: 5px auto 15px;
+    border-radius: 50px;
+}
+
+/* Form */
+.input-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    color: white;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+input:focus, textarea:focus {
+    border-color: white;
+}
+
+/* Button */
+.btn {
+    width: 100%;
+    padding: 12px;
+    background: #ffea00;
+    color: #0072ff;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: white;
+    color: #0072ff;
+}
+
+#responseMsg {
+    margin-top: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

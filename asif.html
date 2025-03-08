@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Raza Asif - Video Editor & Aspiring Developer Portfolio">
+    <meta name="author" content="Raza Asif">
+    <title>Raza Asif | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Raza Asif</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <h2>Hi, I'm <span class="highlight">Raza Asif</span></h2>
+        <p>Video Editor | Aspiring Developer</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/rqzasif" target="_blank">Instagram</a>
+            <a href="https://www.snapchat.com/add/rqzasif" target="_blank">Snapchat</a>
+            <a href="https://www.youtube.com/@Rqzasi" target="_blank">YouTube</a>
+        </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about" class="card">
+        <h2>About Me</h2>
+        <img src="images/profile-placeholder.jpg" alt="Raza Asif's Profile Picture" class="profile-pic">
+        <p>I’m a passionate video editor with a creative touch and a growing interest in coding. I love bringing ideas to life.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="card">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>🎬 Video Editing</li>
+            <li>💻 Basic HTML & CSS</li>
+            <li>📜 Basic JavaScript</li>
+            <li>🧩 Cubing</li>
+            <li>🎶 Whistling</li>
+            <li>🎭 Manipulating</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="card contact-container">
+        <h2>Contact Us</h2>
+        <div class="underline"></div>
+        <p>We’d love to hear from you! Fill out the form below, and we'll get back to you soon.</p>
+
+        <form id="contactForm">
+            <div class="input-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="input-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <div class="input-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Write your message..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn">
+                Send Message
+                <span class="ripple"></span>
+            </button>
+        </form>
+        <p id="responseMsg"></p>
+    </section>
+
+    <script src="script.js"></script>
+<!-- Feedback Button -->
+<button id="feedbackBtn" class="feedback-btn">Give Feedback</button>
+
+<script>
+    document.getElementById("feedbackBtn").addEventListener("click", function () {
+        let feedback = prompt("We'd love to hear your feedback! Please share your thoughts:");
+        if (feedback) {
+            alert("Thank you for your feedback!");
+        }
+    });
+</script>
+
+<style>
+    /* Feedback Button Styling */
+    .feedback-btn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: #ffea00;
+        color: #0072ff;
+        border: none;
+        padding: 10px 15px;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .feedback-btn:hover {
+        background: white;
+        color: #0072ff;
+    }
+</style>
+</body>
+</html>
